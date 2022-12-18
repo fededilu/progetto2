@@ -36,7 +36,7 @@ public class HelloController {
     @FXML
     void invia(ActionEvent event) {
         email = boxEmail.getText();
-        System.out.println(email);
-        testoInvio.setText(email);
+        password = boxPassword.getText();
+        testoInvio.setText(email + "" + password);
     }
 }

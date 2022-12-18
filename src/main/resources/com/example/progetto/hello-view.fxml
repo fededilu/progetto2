@@ -7,19 +7,21 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
 
-<VBox alignment="CENTER" prefHeight="447.0" prefWidth="370.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.example.progetto.HelloController">
+<VBox alignment="CENTER" prefHeight="450.0" prefWidth="370.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.example.progetto.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <children>
       <AnchorPane id="testo" fx:id="testo" prefHeight="407.0" prefWidth="379.0">
          <children>
-            <PasswordField id="boxPassword" fx:id="boxPassword" layoutX="91.0" layoutY="142.0" promptText="inserisci password" />
-            <TextField id="boxEmail" fx:id="boxEmail" layoutX="91.0" layoutY="96.0" promptText="inserisci email" />
-            <Button id="invia" fx:id="invia" layoutX="71.0" layoutY="246.0" mnemonicParsing="false" onAction="#invia" text="invia" />
-            <Button id="cancella" fx:id="canella" layoutX="211.0" layoutY="246.0" mnemonicParsing="false" onAction="#cancella" text="cancella" />
+            <PasswordField id="boxPassword" fx:id="boxPassword" layoutX="91.0" layoutY="183.0" promptText="inserisci password" />
+            <TextField id="boxEmail" fx:id="boxEmail" layoutX="91.0" layoutY="143.0" promptText="inserisci email" />
+            <Button id="invia" fx:id="invia" layoutX="181.0" layoutY="235.0" mnemonicParsing="false" onAction="#invia" prefHeight="25.0" prefWidth="59.0" text="invia" />
+            <Button id="cancella" fx:id="canella" layoutX="91.0" layoutY="235.0" mnemonicParsing="false" onAction="#cancella" text="cancella" />
             <Label id="testoInvio" fx:id="testoInvio" layoutX="93.0" layoutY="187.0" prefHeight="17.0" prefWidth="149.0" />
+            <Circle fill="DODGERBLUE" layoutX="165.0" layoutY="70.0" radius="42.0" stroke="BLACK" strokeType="INSIDE" />
          </children>
       </AnchorPane>
    </children>
